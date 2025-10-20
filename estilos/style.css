@@ -1,26 +1,28 @@
-/* Reset e fonte */
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Fonte e cores */
 body {
   font-family: 'Rubik', sans-serif;
-  background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
-  color: #333;
+  background: linear-gradient(135deg, #f0f0f5, #dcdcff);
+  color: #222;
   padding: 20px;
   line-height: 1.6;
 }
 
+/* Header */
 header {
   text-align: center;
-  padding: 40px 20px;
-  background: linear-gradient(to right, #7b1fa2, #ab47bc);
+  padding: 50px 20px;
+  background: linear-gradient(to right, #6a1b9a, #8e24aa);
   color: white;
   border-radius: 12px;
   margin-bottom: 40px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 header h1 {
@@ -29,48 +31,86 @@ header h1 {
 }
 
 header p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+  font-size: 1.3rem;
+  margin-bottom: 25px;
   opacity: 0.9;
 }
 
 header img {
   width: 300px;
   max-width: 90%;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
 }
 
 header img:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
-/* Conteúdo principal */
+/* Main container */
 main {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 20px;
 }
 
+/* Seções artigos */
 .artigo {
   background: white;
-  border-radius: 10px;
-  padding: 25px;
+  border-radius: 12px;
+  padding: 30px;
   margin-bottom: 30px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.07);
+  transition: transform 0.25s ease;
 }
 
 .artigo:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
 }
 
 .artigo h2 {
-  color: #7b1fa2;
-  margin-bottom: 10px;
+  color: #6a1b9a;
+  margin-bottom: 15px;
 }
 
-.artigo p {
-  font-size: 1.1rem;
+.artigo p,
+.artigo ul {
+  font-size: 1.15rem;
+}
+
+.artigo ul {
+  list-style: inside disc;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: #444;
+}
+
+.artigo code {
+  background: #e0d9ff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+  color: #6a1b9a;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px 10px;
+  font-size: 1rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+}
+.gif-final {
+  text-align: center;
+  background: #f9f7ff;
+}
+
+.gif-final img {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
