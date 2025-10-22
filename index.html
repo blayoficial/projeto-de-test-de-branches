@@ -1,21 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aprendendo branche</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aprendendo Branches</title>
+  <link rel="stylesheet" href="estilos/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
-    <main><header>
-        <h1></h1>
-    </header></main>
-    <article>
-        <h2>teste de branches</h2>
-        <p>texto artigo 001</p>
-    </article>
-    <article>
-        <h2>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h2>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, dolores magni. Nisi et animi possimus quasi aspernatur quo consequuntur? Aliquam reiciendis necessitatibus nemo id aperiam officiis dolorum odit ullam laborum?</p>
-    </article>
+
+  <header>
+    <div class="cabecalho">
+      <h1>🌿 Branches no Git</h1>
+      <p>Um guia completo para entender e usar branches</p>
+      <img src="imagens/branchessssssss.png" alt="Imagem representando branches do Git" />
+    </div>
+  </header>
+
+  <main>
+
+    <section id="oque" class="artigo">
+      <h2> O que são Branches?</h2>
+      <p>
+        Branches são ramificações dentro de um repositório Git que permitem
+        trabalhar em versões paralelas do código. Isso facilita o desenvolvimento
+        de funcionalidades, testes e correções sem alterar o código principal.
+      </p>
+    </section>
+
+    <section id="porque" class="artigo">
+      <h2> Por que usar Branches?</h2>
+      <p>
+        Eles permitem que várias pessoas trabalhem simultaneamente em diferentes
+        partes do projeto, evitando conflitos diretos. Também facilitam a revisão,
+        testes e a integração de código antes de juntar tudo no branch principal.
+      </p>
+    </section>
+
+    <section id="comandos" class="artigo">
+      <h2> Comandos básicos do Git para Branches</h2>
+      <ul>
+        <li><code>git branch</code> — Lista todos os branches locais</li>
+        <li><code>git branch nome-do-branch</code> — Cria um novo branch</li>
+        <li><code>git checkout nome-do-branch</code> — Muda para o branch especificado</li>
+        <li><code>git checkout -b nome-do-branch</code> — Cria e muda para um novo branch</li>
+        <li><code>git merge nome-do-branch</code> — Junta outro branch ao branch atual</li>
+        <li><code>git branch -d nome-do-branch</code> — Deleta um branch local (depois de mesclado)</li>
+      </ul>
+    </section>
+
+    <section id="fluxo" class="artigo">
+      <h2> Fluxo típico de trabalho com Branches</h2>
+      <p>
+        1. Crie um branch para a nova funcionalidade ou correção: <code>git checkout -b minha-feature</code><br/>
+        2. Faça suas alterações e commits nesse branch.<br/>
+        3. Mude para o branch principal (geralmente <code>main</code> ou <code>master</code>): <code>git checkout main</code><br/>
+        4. Atualize o branch principal: <code>git pull</code><br/>
+        5. Una o branch da feature ao branch principal: <code>git merge minha-feature</code><br/>
+        6. Exclua o branch da feature, se quiser: <code>git branch -d minha-feature</code>
+      </p>
+    </section>
+
+    <section id="duvidas" class="artigo">
+      <h2> Dúvidas comuns sobre Branches</h2>
+      <p><strong>Posso trabalhar em vários branches ao mesmo tempo?</strong> Sim! Você pode criar e alternar entre vários branches conforme a necessidade.</p>
+      <p><strong>O que é um conflito de merge?</strong> Ocorre quando as mesmas linhas de código foram alteradas em dois branches diferentes. O Git pedirá que você resolva manualmente o conflito.</p>
+      <p><strong>Qual a diferença entre merge e rebase?</strong> Merge junta dois branches preservando o histórico; rebase "reaplica" commits de um branch em outro para manter um histórico linear. Ambos têm usos diferentes.</p>
+    </section>
+
+    <section id="dicas" class="artigo">
+      <h2> Dicas para trabalhar com Branches</h2>
+      <ul>
+        <li>Mantenha seus branches pequenos e focados em uma única tarefa.</li>
+        <li>Faça commits frequentes com mensagens claras.</li>
+        <li>Teste suas alterações antes de fazer merge.</li>
+        <li>Sincronize frequentemente seu branch com o branch principal para evitar conflitos grandes.</li>
+      </ul>
+    </section>
+   <section class="artigo gif-final">
+     <h2> Crescendo com Git</h2>
+     <p>Porque aprender Git também pode ser divertido!</p>
+     <img src="imagens/arvore_animada.gif" alt="Gif animado representando crescimento ou branches" />
+   </section>
+
+  </main>
+
+  <footer>
+    <p> Feito para te ajudar a aprender Git e Branches, e também para servir como referência quando você precisar. Obrigado por estar aqui! 💖</p>
+  </footer>
+
 </body>
 </html>
